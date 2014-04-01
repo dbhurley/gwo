@@ -1,0 +1,22 @@
+{
+    "name": "joomla/model",
+    "type": "joomla-package",
+    "description": "Joomla Model Package",
+    "keywords": ["joomla", "framework", "model"],
+    "homepage": "https://github.com/joomla-framework/model",
+    "license": "GPL-2.0+",
+    "require": {
+        "php": ">=5.3.10",
+        "joomla/registry": "~1.0",
+        "joomla/database": "~1.0"
+    },
+    "require-dev": {
+        "joomla/test": "~1.0"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"Joomla\\Model\\": "src/",
+            "Joomla\\Model\\Tests\\": "Tests/"
+    	}
+    }
+}

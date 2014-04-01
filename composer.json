@@ -1,0 +1,26 @@
+{
+	"name"       : "Money/framework-sample",
+	"description": "Sample application built on the Joomla! Framework",
+	"license"    : "GPL-2.0+",
+	"authors"    : [
+		{
+			"name" : "David Hurley",
+			"email": "david@websparkinc.com"
+		}
+	],
+	"require"    : {
+		"php"               		: ">=5.4",
+		"twig/twig" 				: "1.*@stable",
+		"joomla/application"		: ">=1.1.1",
+		"joomla/controller" 		: ">=1.1.1",
+		"joomla/model"      		: ">=1.1.1",
+		"joomla/router"     		: ">=1.1.1",
+		"joomla/view"       		: ">=1.1.1"
+	},
+	"autoload"   : {
+		"psr-4": {
+			"Money\\": "src/",
+			"Money\\CLI\\": "cli/"
+		}
+	}
+}
